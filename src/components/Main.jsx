@@ -1,6 +1,7 @@
 import { useMoralisQuery } from "react-moralis";
 import Categories from "./Categories"
 import Feed from "./Feed"
+import Polls from "./Polls";
 
 const Main = () => {
     const queryCategories = useMoralisQuery("Categories");
@@ -18,8 +19,9 @@ const Main = () => {
                 width: "100%",
                 gap: "20px",
                 }}>
-                <Categories categories={fetchedCategories}/>
-                <Feed/>
+                    <Polls />
+                {/* <Categories categories={fetchedCategories}/>
+                <Feed/> */}
             </div>
             
         </div>
